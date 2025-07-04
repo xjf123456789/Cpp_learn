@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: 编译职工管理系统",
+            "command": "g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-std=c++17",
+                "-Wall",
+                "-Wextra",
+                "-I${workspaceFolder}/职工管理系统/include",
+                "${workspaceFolder}/职工管理系统/src/*.cpp",
+                "-o",
+                "${workspaceFolder}/职工管理系统/bin/main.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "编译职工管理系统项目"
+        },
+        {
+            "type": "shell",
+            "label": "运行职工管理系统",
+            "command": "${workspaceFolder}/职工管理系统/bin/main.exe",
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "dependsOn": "C/C++: 编译职工管理系统"
+        }
+    ]
+}
