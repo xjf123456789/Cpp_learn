@@ -36,51 +36,52 @@ int main() {
     SetConsoleOutputCP(CP_UTF8);
     
     // 创建 WorkerManager 对象
-    // WorkerManager wm;
-    // int choice = 0;
-    // while(true)
-    // {
-    //     wm.show_Menu();
-    //     cout <<"请输入您的选择："<<  endl;
-    //     cin >> choice;
-    //     switch(choice)
-    //     {
-    //         case 0:
-    //             cout << "欢迎下次使用！" << endl;
-    //             return 0; // 退出程序
-    //         case 1:
-    //             cout << "增加职工信息功能" << endl;
-    //             // 调用增加职工信息的函数
-    //             break;
-    //         case 2:
-    //             cout << "显示职工信息功能" << endl;
-    //             // 调用显示职工信息的函数
-    //             break;
-    //         case 3:
-    //             cout << "删除离职职工功能" << endl;
-    //             // 调用删除离职职工的函数
-    //             break;
-    //         case 4:
-    //             cout << "修改职工信息功能" << endl;
-    //             // 调用修改职工信息的函数
-    //             break;
-    //         case 5:
-    //             cout << "查找职工信息功能" << endl;
-    //             // 调用查找职工信息的函数
-    //             break;
-    //         case 6:
-    //             cout << "按照编号排序功能" << endl;
-    //             // 调用排序的函数
-    //             break;
-    //         case 7:
-    //             cout << "清空所有文档功能" << endl;
-    //             // 调用清空文档的函数
-    //             break;
-    //         default:
-    //             system("cls"); // 清屏
-    //             break; // 无效输入，重新显示菜单
-    //     }
-    // }
+    WorkerManager wm;
+    int choice = 0;
+    while(true)
+    {
+        wm.show_Menu();
+        cout <<"请输入您的选择："<<  endl;
+        cin >> choice;
+        switch(choice)
+        {
+            case 0:
+                cout << "欢迎下次使用！" << endl;
+                return 0; // 退出程序
+            case 1:
+                cout << "增加职工信息功能" << endl;
+                // 调用增加职工信息的函数
+                wm.Add_Emp();
+                break;
+            case 2:
+                cout << "显示职工信息功能" << endl;
+                // 调用显示职工信息的函数
+                break;
+            case 3:
+                cout << "删除离职职工功能" << endl;
+                // 调用删除离职职工的函数
+                break;
+            case 4:
+                cout << "修改职工信息功能" << endl;
+                // 调用修改职工信息的函数
+                break;
+            case 5:
+                cout << "查找职工信息功能" << endl;
+                // 调用查找职工信息的函数
+                break;
+            case 6:
+                cout << "按照编号排序功能" << endl;
+                // 调用排序的函数
+                break;
+            case 7:
+                cout << "清空所有文档功能" << endl;
+                // 调用清空文档的函数
+                break;
+            default:
+                system("cls"); // 清屏
+                break; // 无效输入，重新显示菜单
+        }
+    }
     test();
     system("pause");
     return 0;
