@@ -44,6 +44,9 @@ void test01()
     }
 	//resize 重新指定大小 ，若指定的更大，默认用0填充新位置，可以利用重载版本替换默认填充
     v1.resize(15,10);
+    cout << "v1的大小 = " << v1.size() << endl;
+	cout << "v1的容量 = " << v1.capacity() << endl;
+
     printVector(v1);
 
 	//resize 重新指定大小 ，若指定的更小，超出部分元素被删除
