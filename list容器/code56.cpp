@@ -54,7 +54,7 @@ void test01()
 	L.push_back(p4);
 	L.push_back(p5);
 	L.push_back(p6);
-
+    
     for(list<Person>::iterator it =L.begin();it !=L.end(); it++)
     {
         cout << "姓名: " << it->m_Name <<"年龄: "<<it->m_Age
