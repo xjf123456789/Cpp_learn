@@ -45,6 +45,8 @@
         "list": "cpp",
         "code61cpp": "cpp",
         "set": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp"
     }
 }
